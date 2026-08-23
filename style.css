@@ -1,0 +1,185 @@
+* {
+  --graaa: 0.5rem;
+}
+
+a {
+  color: pink;
+}
+
+a:hover {
+  color: purple;
+  transform: scale(150%);
+}
+
+a:active {
+  color: red;
+}
+
+body {
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-image: url("img/stars.gif");
+}
+
+.progs * {
+  width: 10%;
+  border-style: none;
+}
+
+.class1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--graaa);
+}
+
+@media screen and (max-width: 1200px) {
+  .class1 {
+    width: 100%;
+  }
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--graaa);
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--graaa);
+}
+
+@media screen and (max-width: 500px) {
+  .grid1 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.border,
+table,
+tr,
+td {
+  border-style: ridge;
+  border-color: white;
+}
+
+table:hover {
+  background-color: black;
+}
+
+.scale {
+  transition-duration: 0.5s;
+}
+
+@media screen and (min-width: 1200px) {
+  .scale:hover {
+    transition-duration: 0.5s;
+    transform: scale(150%);
+  }
+}
+
+@keyframes obscure {
+  from {
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  25% {
+    transform: scale(130%);
+  }
+
+  50% {
+    font-weight: 100;
+    font-style: normal;
+    transform: scale(200%);
+  }
+
+  75% {
+    transform: scale(110%);
+  }
+
+  to {
+    font-style: italic;
+  }
+}
+
+.obscure {
+  animation-name: obscure;
+  animation-duration: 10ms;
+  animation-iteration-count: infinite;
+  width: fit-content;
+}
+
+.menu {
+  display: flex;
+  gap: calc(var(--graaa) * 4);
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.circle {
+  border-radius: 100%;
+}
+
+.huge {
+  font-size: 8rem;
+  text-wrap: nowrap;
+}
+
+.emog {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  transform: scale(150%);
+  background-size: 100%;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+
+.emog-trolloman {
+  background-image: url("img/emogs/trolloman.png");
+}
+
+.emog-rad {
+  background-image: url("img/emogs/rad.png");
+}
+
+.emog-gd1 {
+  background-image: url("img/emogs/gd1.png");
+  transform: scale(170%);
+}
+
+.emog-dead {
+  background-image: url("img/emogs/dead.png");
+}
+
+@keyframes rainbow {
+  from {
+    color: red
+  }
+
+  33% {
+    color: rgb(0, 255, 0)
+  }
+
+  66% {
+    color: rgb(0, 106, 255)
+  }
+
+  to {
+    color: red
+  }
+}
+
+.rainbow {
+  animation-name: rainbow;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+}
