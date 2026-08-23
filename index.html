@@ -1,133 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body, html {
+        margin: 0;
+        scroll-behavior: smooth;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>`✵•.¸,✵°✵.｡.✰ 𝕋𝕙𝕖𝕄𝕒𝕚𝕥𝕙𝕖𝕣 ✰.｡.✵°✵,¸.•✵´</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-</head>
+      .landing {
+        background-color: black;
+        padding: 1.5rem;
+        color: white;
+        min-height: 100vh;
+        box-sizing: border-box;
+        font-size: 24px;
+        background-size: cover;
+      }
 
-<body onload="main()">
-  <div class="class1">
-    <article class="border">
-      <marquee scrollamount="40">
-        <h1 class="rainbow">TheMaither personal page</h1>
-        <div class="menu">
-          <a href="https://www.youtube.com/@themaither">Youtube</a>
+      .landing .body {
+        margin-top: 35vh;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 24px;
+      }
+
+      .landing .navbar {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 2rem;
+      }
+
+      .landing .title {
+        font-size: 56px;
+      }
+
+      .landing a {
+        color: white;
+      }
+
+      .landing a.button {
+        font-family: sans;
+        background-color: transparent;
+        color: white;
+        padding: 0.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        border-style: solid;
+        border-color: red;
+        border-width: 2px;
+        border-radius: 0.25rem;
+        transition: 0.1s;
+        font-weight: bold;
+        text-decoration-line: none;
+      }
+
+      .landing a.button:hover {
+        background-color: red;
+      }
+
+      .landing a.button:active {
+        background-color: white;
+        border-color: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="landing">
+      <div class="navbar">
+        <a>TheMaither Personal Page</a>
+
+        <div style="grid-column: -1; display: flex; gap: inherit;">
+          <a href="https://www.youtube.com/@themaither">YouTube</a>
           <a href="https://github.com/themaither">Github</a>
-          <a href="https://steamcommunity.com/id/themaither/">Steam</a>
+          <a href="https://steamcommunity.com/id/themaither">Steam</a>
         </div>
-      </marquee>
-    </article>
-    <article class="grid1">
-      <div class="border scale circle">
-        <img src="img/man.png" class="circle" width="100%" height="100%">
       </div>
-      <div class="border">
-        <h2>
-          <marquee class="rainbow" scrollamount="40">
-            About
-          </marquee>
-        </h2>>
-        <table class="blak scale">
-          <tr>
-            <td>Name</td>
-            <td>Th3M41th3r</td>
-          </tr>
-          <tr>
-            <td>Local time</td>
-            <td id="time"></td>
-          </tr>
-          <tr>
-            <td>Know languages</td>
-            <td>
-              <ul>
-                <li>American 🇱🇷</li>
-                <li>British 🏴󠁧󠁢󠁥󠁮󠁧󠁿</li>
-                <li>Солов'їна <span style="transform: rotate(0.5turn); display: inline-block;">🇺🇦</span></li>
-                <li>Коцапська 🇸🇮</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>Programming languages</td>
-            <td class="progs">
-              <img src="img/langs/c.png">
-              <img src="img/langs/cpp.png">
-              <img src="img/langs/cs.png">
-              <img src="img/langs/java.png">
-              <img src="img/langs/javascript.png">
-              <img src="img/langs/bash.png">
-            </td>
-          </tr>
-        </table>
+      <div class="body">
+        <div class="title">
+          TheMaither Personal Page
+        </div>
+        <br>
+        <a class="button" href="#rest">
+          Learn more<span style="width: 0.5rem; display: inline-block;"></span>→
+        </a>
       </div>
-    </article>
-    <article class="grid2">
-      <div class="border" style="aspect-ratio: 16 / 9;">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_N8BHdZt0xY"
-          title="MINECRAFT Фильм АНИМАЦИЯ ТУФОВАЯ ЗАВИСИМОСТЬ (Полная версия) МАШИНИМА" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <div class="border">
-        <h2>
-          <marquee>Youtube</marquee>
-        </h2>
-        <p>I worke at YOutube as youTuber @themaither. please follow me and leave likes and soubscribe and share all
-          videos. I mainly record films about nuclear war and reactors ☢️
-        <div class="emog emog-rad"></div>
-        </p>
-      </div>
-    </article>
-    <article class="border">
-      <h1 class="huge">
-        I know CSS very well
-      </h1>
-    </article>
-    <article class="grid1">
-      <div class="border">
-        <h2>Gaming</h2>
-        <p>
-          I'm ap rofessional gamer. I play games like:
-        </p>
-        <ul>
-          <li>
-            Team fortress 2 (1000h demo main
-            <div class="emog emog-trolloman"></div>
-            <div class="emog emog-trolloman"></div>
-            <div class="emog emog-trolloman"></div>)
-          </li>
-          <li>
-            Minecraf (profressional reactor exploder)
-            <div class="emog emog-rad"></div>
-          </li>
-          <li>
-            Geometry dash(forsaken neon 97% gg
-            <div class="emog emog-dead"></div>
-            <div class="emog emog-gd1"></div>
-            )
-          </li>
-        </ul>
-      </div>
-      <div class="border" style="aspect-ratio: 16 / 9;">
-        <iframe width="100%" height="100%"
-          src="https://www.youtube.com/embed/dPCVvoj7YyU?list=PLXWW5Knyma2hM7imMr2Zul5qIDZUV-JAR"
-          title="2023-08-15 15-26-09" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-    </article>
-    <article class="border">
-      <h2>Dont even try to decipher this. I used C rand() function to do that, it is impossible! But if you for some
-        reason see numbers, comment them to my latest video.</h2>
-      <div style="aspect-ratio: 1 / 1;">
-        <img src="img/message.bmp" width="100%">
-      </div>
-    </article>
-  </div>
-</body>
-
+    </div>
+    <span id="rest"></span>
+    <h1>About me</h1>
+    I don't know what to say here so here is all thing i use:
+    <h1>Software i use (all FS):</h1>
+    <ul>
+      <li><a href="https://keepassxc.org/">KeePassXC</a> --- password manager</li>
+      <li><a href="https://www.keepassdx.com/">KeePassDX</a> --- password manager (for android, same format as KeePassXC)</li>
+      <li><a href="https://kde.org/plasma-desktop/">KDE Plasma 6</a> --- desktop environment</li>
+      <li><a href="https://www.gentoo.org/">Gentoo linux</a> --- linux distro</li>
+      <li><a href="https://kdenlive.org/">Kdenlive</a> --- editing videos</li>
+      <li><a href="https://kdeconnect.kde.org/">KDE Connect</a> --- android phone + pc interop</li>
+      <li><a href="https://inkscape.org/">Inkscape</a> --- vector graphics editor</li>
+      <li><a href="https://apps.kde.org/kate/">Kate</a> (with vi mode) --- text editor</li>
+      <li><a href="https://krita.org/en/">Krita</a> --- drawing graphics and stuff</li>
+      <li><a href="https://obsproject.com">OBS Studio</a> --- screen recorded (it's made for streaming but i only use it for recording)</li>
+      <li><a href="https://www.audacityteam.org/">Audacity</a> --- audio editing</li>
+      <li><a href="https://termux.dev/en/">Termux</a> --- terminal emulator (for android)</li>
+      <li><a href="https://f-droid.org">F-Droid</a> --- app repository for android</li>
+      <li><a href="https://librewolf.net/">Librewolf</a> --- web browser</li>
+      <li><a href="https://github.com/mlm-games/flicky">Flicky</a> --- f-droid client for android tv</li>
+      <li><a href="https://smarttubeapp.github.io/">SmartTube</a> --- youtube client for android tv</li>
+      <li><a href="https://gcc.gnu.org/">Gnu Compiler Collection</a> --- compiler for c and c++</li>
+      <li><a href="https://www.videolan.org/vlc/">VLC Media Player</a> --- playing audio and video</li>
+      <li><a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a> --- downloading videos from youtube and different pages</li>
+      Links were checked 2026-08-23
+    </ul>
+    <h1>Hardware:</h1>
+    <ul>
+      <li>CPU: AMD Ryzen 5 5600X 6-Core Processor</li>
+      <li>GPU: Graphics Processor: NVIDIA GeForce GTX 1650</li>
+    </ul>
+    Looking for old page: <a href="old/index.html">go here</a>.
+  </body>
 </html>
